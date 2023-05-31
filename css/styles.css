@@ -1,465 +1,433 @@
+@charset "UTF-8";
 /*Buena Práctica: colocar los margin y padding en 0*/
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
-.chiuni {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.chiuni img {
-    margin: 10px;
-    border: solid black;
-    text-align: center;
-    max-width: 100%;
-}
-
-.logo img{
-    width: 250px;
-}
-
-
-.logofooter img{
-    width: 150px;
-}
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.body__parrafo {
-    color: black;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-/*Aplicando Pseudoclases*/
-
-.menu li a:hover {
-    color: rgb(178, 143, 211);
-}
-.menu li a:active {
-    background-color: #a3a5c3;
-    color: rgb(68, 115, 190);
-}
-
-/*Decidí utilizar una paleta del color del azul porqué esta relacionado a la educación*/
-
-/*Características h1*/
 
 h1 {
-    /*Propiedad = color y el blueviolet = Valor*/
-    color: rgb(15, 25, 139);
-    text-align: center;
-    font-size: 2rem;
-
+  /*Propiedad = color y el blueviolet = Valor*/
+  color: rgb(15, 25, 139);
+  text-align: center;
+  font-size: 2rem;
 }
 
 /*Caracterísitcas h2*/
-
 h2 {
-    color: rgb(56, 56, 121);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+  color: rgb(56, 56, 121);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
-.titnot {
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-}
-
-/*Características h3*/
-
+/*Caracterísitcas h3*/
 h3 {
-    color: rgb(21, 21, 208);
-    font-weight: 400;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    text-align: center;
-    font-size: 25px;
+  color: rgb(21, 21, 208);
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 25px;
 }
 
-.redsoc {
-    font-size: 1rem;
-    text-align: left;
+h4 {
+  margin-left: 10px;
 }
-.datos {
-    color: black;
-}
-/*Características ul*/
 
 ul {
-    list-style: none;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    color: rgb(15, 0, 79);
+  list-style: none;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  color: rgb(15, 0, 79);
 }
 
-p{
-    margin-bottom: 10px;
-    margin-left: 10px;
-    color: rgb(15, 0, 79);
+p {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: rgb(15, 0, 79);
 }
 
+header {
+  background-color: white;
+  border: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
-/*Logo de WhatsApp para que se comuniquen para consultas*/
-
-.whatsapp{
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
+.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
 }
 
 .whatsapp img {
-    width: 60px;  
+  width: 60px;
 }
 
-/*Header: revisar colores y acomodadar la nav (inline y esquinado)*/
-
-header{
-    background-color: white;
-    border: white;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+header {
+  background-color: white;
+  border: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.notint {
-    background-color: rgb(108, 105, 129);
-    margin-left: 5px;
-    margin-right: 5px;
-    border: solid;
+body {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-
-/*Formato para Facultad de Ciencias Jurídicas en Index*/
-
-.ingindex{
-    background-color: #a3a5c3;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding: 10px;
-    width: 300px;
-    border: solid 3px black;
-    grid-area: ingenieria;
-}
-.ingindex img {
-    width: 290px;
-    display: block;
-    margin: 0 auto;
+.body__parrafo {
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-.ingindex ul{
-margin-top: 15px; margin-bottom: 15px;
+.redsoc {
+  font-size: 1rem;
+  text-align: left;
 }
 
-.formulario {
-    background-color: rgb(18, 18, 64);
-    color: whitesmoke;
-    padding: 0 1.5em;
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+.datos {
+  color: black;
 }
 
-
-.forms {
-    margin: 20px;
-}
-.preg {
-    width: 100%;
-    padding: .5em;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    border: none;
-    text-align: center;
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-
-.formulario-contacto {
-    text-align: center;
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
-/*Formato para Facultad de Ciencias Médicas en Index*/
-
-.medindex{
-    background-color: #a3a5c3;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding: 10px;
-    width: 300px;
-    border: solid 3px black;
-    grid-area: salud;
-}
-.medindex img {
-    width: 290px;
-    height: 190px;
-    display: block;
-    margin: 0 auto;
-}
-
-.medindex ul{
-margin-top: 15px; margin-bottom: 15px;
-}
-
 .nav-link:hover {
-    color: blueviolet;
-    background-color: rgb(201, 201, 201);
+  color: blueviolet;
+  background-color: rgb(201, 201, 201);
 }
 
 .nav-link {
-    color: rgb(12, 12, 71);
-    text-align: center;
+  color: rgb(12, 12, 71);
+  text-align: center;
 }
 
-/*Formato para Facultad de Ciencias Jurídicas en Index*/
-
-.jurindex{
-    background-color: #a3a5c3;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding: 10px;
-    width: 300px;
-    border: solid 3px black;
-    grid-area: juridica;
+.socialmedia {
+  margin: 10px 10px;
 }
-.jurindex img {
-    width: 290px;
-    display: block;
-    margin: 0 auto;
+.socialmedia img {
+  width: 40px;
 }
 
-.jurindex ul{
-margin-top: 15px; margin-bottom: 15px;
-}
-
-.socialmedia{
-    margin: 10px 10px;
-}
-
-.socialmedia img{
-    width: 40px;
+header {
+  background-color: white;
+  border: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .logofooter {
-
-    margin: 15px 10px;
+  margin: 15px 10px;
+}
+.logofooter img {
+  width: 150px;
 }
 
-.anidada{
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-style: italic;
+.logo img {
+  width: 250px;
 }
 
-.anidada ul{
-    list-style: none;
-    margin-left: 3px;
+/*Aplicando Pseudoclases*/
+.menu li a:hover {
+  color: rgb(178, 143, 211);
 }
 
-.noticias {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-h4{
-    margin-left: 10px;
+.menu li a:active {
+  background-color: #a3a5c3;
+  color: rgb(68, 115, 190);
 }
 
-.milstein{
-    background-color: rgb(29, 22, 83);
-    border: solid 3px black;
-    text-align:justify;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto
+.chiuni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chiuni img {
+  margin: 10px;
+  border: solid rgb(0, 0, 0);
+  text-align: center;
+  max-width: 100%;
 }
 
-.milstein img{
-    width: 150px;
-    display: block;
-    margin: 0 auto;
+/*Formato para Facultad de Ciencias Jurídicas en Index*/
+.ingindex {
+  background-color: #a3a5c3;
+  margin-top: 25px;
+  margin-left: 20px;
+  padding: 10px;
+  width: 300px;
+  border: solid 3px black;
+  grid-area: ingenieria;
+}
+.ingindex img {
+  width: 290px;
+  display: block;
+  margin: 0 auto;
+}
+.ingindex ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.milstein h3 {
-    text-align: center;
-    color: white;
+.medindex {
+  background-color: #a3a5c3;
+  margin-top: 25px;
+  margin-left: 20px;
+  padding: 10px;
+  width: 300px;
+  border: solid 3px black;
+  grid-area: salud;
+}
+.medindex img {
+  width: 290px;
+  height: 190px;
+  display: block;
+  margin: 0 auto;
+}
+.medindex ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.milstein p{
-    color: white;
+.jurindex {
+  background-color: #a3a5c3;
+  margin-top: 25px;
+  margin-left: 20px;
+  padding: 10px;
+  width: 300px;
+  border: solid 3px black;
+  grid-area: juridica;
 }
-
-.favaloro {
-    background-color: rgb(29, 22, 83);
-    border: solid 3px black;
-    text-align:justify;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    }
-
-.favaloro img{
-    width: 150px;
-    display: block;
-    margin: 0 auto;
+.jurindex img {
+  width: 290px;
+  display: block;
+  margin: 0 auto;
 }
-
-.favaloro h3 {
-    text-align: center;
-    color: white;
+.jurindex ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-
-.favaloro p{
-    color: white;
-}
-
-.grandes {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin: 10px;
-}
-.malvarg img{
-    width: 200px;
-    border-style: solid;
-    border-color: black;
-}
-
-/*Aplicando Flexbox*/
-
 
 .titleca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .carreras {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .carreras {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+  }
+}
+.favaloro {
+  background-color: rgb(29, 22, 83);
+  border: solid 3px black;
+  text-align: justify;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.favaloro img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.favaloro h3 {
+  text-align: center;
+  color: white;
+}
+.favaloro p {
+  color: white;
 }
 
-
-@media (max-width: 768px) {
-    .carreras {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    }    
-
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
+.milstein {
+  background-color: rgb(29, 22, 83);
+  border: solid 3px black;
+  text-align: justify;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.milstein img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.milstein h3 {
+  text-align: center;
+  color: white;
+}
+.milstein p {
+  color: white;
 }
 
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.noticias {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.grandes {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: 10px;
+}
+
+.malvarg img {
+  width: 200px;
+  border-style: solid;
+  border-color: black;
+}
+
+.notint {
+  background-color: rgb(108, 105, 129);
+  margin-left: 5px;
+  margin-right: 5px;
+  border: solid;
+}
+
+.anidada {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.anidada ul {
+  list-style: none;
+  margin-left: 3px;
+}
+
+.titnot {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.formulario {
+  background-color: rgb(18, 18, 64);
+  color: whitesmoke;
+  padding: 0 1.5em;
+  max-width: 1170px;
+  margin: 0px;
+}
+
+.forms {
+  margin: 20px;
+}
+
+.preg {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  border: none;
+  text-align: center;
+}
+
+.formulario-contacto {
+  text-align: center;
 }
 
 /*Galería utilizando Grids*/
-
 .body__gdf {
-    display: grid;
-    grid-template-areas: 
-    "foto1 foto1 foto2 foto2 foto2"
-    "foto1 foto1 foto2 foto2 foto2"
-    "foto3 foto3 foto2 foto2 foto2"
-    "foto4 foto4 foto5 foto5 foto6"
-    "foto7 foto7 foto8 foto9 foto9";
-    gap: 12px;
-    background-color: rgb(26, 26, 68);
-    padding: 10px;
+  display: grid;
+  grid-template-areas: "foto1 foto1 foto2 foto2 foto2" "foto1 foto1 foto2 foto2 foto2" "foto3 foto3 foto2 foto2 foto2" "foto4 foto4 foto5 foto5 foto6" "foto7 foto7 foto8 foto9 foto9";
+  gap: 12px;
+  background-color: rgb(26, 26, 68);
+  padding: 10px;
 }
 
 .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
-    max-width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center
+  max-width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
 .img1 {
-    background-image: url(../img/1.jpg);
-    grid-area: foto1
+  background-image: url(../img/1.jpg);
+  grid-area: foto1;
 }
 
 .img2 {
-    background-image: url(../img/2.jpg);
-    grid-area: foto2;
-    align-self: start;
-    height: 100%;
+  background-image: url(../img/2.jpg);
+  grid-area: foto2;
+  align-self: start;
+  height: 100%;
 }
 
 .img3 {
-    background-image: url(../img/3.jpg);
-    grid-area: foto3;
+  background-image: url(../img/3.jpg);
+  grid-area: foto3;
 }
 
 .img4 {
-    background-image: url(../img/4.jpg);
-    grid-area: foto4;
+  background-image: url(../img/4.jpg);
+  grid-area: foto4;
 }
 
 .img5 {
-    background-image: url(../img/5.jpg);
-    grid-area: foto5;
+  background-image: url(../img/5.jpg);
+  grid-area: foto5;
 }
 
 .img6 {
-    background-image: url(../img/6.jpg);
-    grid-area: foto6;
+  background-image: url(../img/6.jpg);
+  grid-area: foto6;
 }
 
 .img7 {
-    background-image: url(../img/7.jpg);
-    grid-area: foto7;
+  background-image: url(../img/7.jpg);
+  grid-area: foto7;
 }
 
 .img8 {
-    background-image: url(../img/8.jpg);
-    grid-area: foto8;
+  background-image: url(../img/8.jpg);
+  grid-area: foto8;
 }
 
 .img9 {
-    background-image: url(../img/9.jpg);
-    grid-area: foto9
+  background-image: url(../img/9.jpg);
+  grid-area: foto9;
 }
 
 @media (max-width: 768px) {
-    .body__gdf {
-
-    grid-template-areas: 
-    "foto1 foto1 foto1"
-    "foto2 foto2 foto2"
-    "foto3 foto3 foto3"
-    "foto4 foto4 foto4"
-    "foto5 foto5 foto5"
-    "foto6 foto6 foto6"
-    "foto7 foto7 foto7"
-    "foto8 foto8 foto8"
-    "foto9 foto9 foto9";}
+  .body__gdf {
+    grid-template-areas: "foto1 foto1 foto1" "foto2 foto2 foto2" "foto3 foto3 foto3" "foto4 foto4 foto4" "foto5 foto5 foto5" "foto6 foto6 foto6" "foto7 foto7 foto7" "foto8 foto8 foto8" "foto9 foto9 foto9";
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

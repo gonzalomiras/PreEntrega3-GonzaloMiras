@@ -1,0 +1,164 @@
+/*Buena Práctica: colocar los margin y padding en 0*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    /*Propiedad = color y el blueviolet = Valor*/
+    color: rgb(15, 25, 139);
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+/*Caracterísitcas h2*/
+
+h2 {
+    color: rgb(56, 56, 121);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/*Caracterísitcas h3*/
+
+h3 {
+    color: rgb(21, 21, 208);
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+h4{
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: rgb(15, 0, 79);
+}
+
+p{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: rgb(15, 0, 79);
+}
+
+header{
+    background-color: white;
+    border: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.whatsapp img {
+    width: 60px;  
+}
+
+header{
+    background-color: white;
+    border: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.body__parrafo {
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.redsoc {
+    font-size: 1rem;
+    text-align: left;
+}
+.datos {
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.nav-link:hover {
+    color: blueviolet;
+    background-color: rgb(201, 201, 201);
+}
+
+.nav-link {
+    color: rgb(12, 12, 71);
+    text-align: center;
+}
+.socialmedia{
+    margin: 10px 10px;
+    
+    img{
+    width: 40px;
+    }
+}
+
+header{
+    background-color: white;
+    border: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logofooter {
+    margin: 15px 10px;
+    img{
+        width: 150px;
+    }
+}
+
+.logo img{
+    width: 250px;
+}
+
+
+/*Aplicando Pseudoclases*/
+
+.menu li a:hover {
+    color: rgb(178, 143, 211);
+}
+.menu li a:active {
+    background-color: #a3a5c3;
+    color: rgb(68, 115, 190);
+}

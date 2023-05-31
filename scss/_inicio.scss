@@ -1,0 +1,188 @@
+.chiuni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin: 10px;
+        border: solid rgb(0, 0, 0);
+        text-align: center;
+        max-width: 100%;
+        }
+}
+
+/*Formato para Facultad de Ciencias Jurídicas en Index*/
+
+.ingindex {
+    background-color: #a3a5c3;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 300px;
+    border: solid 3px black;
+    grid-area: ingenieria;
+
+    img {
+    width: 290px;
+    display: block;
+    margin: 0 auto;
+    }
+
+    ul{
+    margin-top: 15px; margin-bottom: 15px;
+    }    
+}
+
+.medindex{
+    background-color: #a3a5c3;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 300px;
+    border: solid 3px black;
+    grid-area: salud;
+
+    img {
+    width: 290px;
+    height: 190px;
+    display: block;
+    margin: 0 auto;
+    }
+
+    ul{
+    margin-top: 15px; margin-bottom: 15px;
+    }
+    
+}
+.jurindex{
+    background-color: #a3a5c3;
+    margin-top: 25px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 300px;
+    border: solid 3px black;
+    grid-area: juridica;
+
+    img {
+    width: 290px;
+    display: block;
+    margin: 0 auto;
+    }
+
+    ul{
+    margin-top: 15px; margin-bottom: 15px;
+    }
+} 
+.titleca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.carreras {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+    .carreras {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }    
+
+.favaloro {
+        background-color: rgb(29, 22, 83);
+        border: solid 3px black;
+        text-align:justify;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        
+    
+        img{
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        }
+    
+        h3 {
+        text-align: center;
+        color: white;
+        }
+    
+        p{
+        color: white;
+        }
+}
+
+.milstein {
+    background-color: rgb(29, 22, 83);
+    border: solid 3px black;
+    text-align:justify;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+
+    img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    }
+
+    h3 {
+    text-align: center;
+    color: white;
+    }
+
+    p{
+    color: white;
+    }
+}
+.noticias {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.grandes {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 10px;
+}
+.malvarg img{
+    width: 200px;
+    border-style: solid;
+    border-color: black;
+}
+
+.notint {
+    background-color: rgb(108, 105, 129);
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid;
+}
+
+.anidada{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+
+    ul{
+    list-style: none;
+    margin-left: 3px;
+    }
+}
+
+.titnot {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
