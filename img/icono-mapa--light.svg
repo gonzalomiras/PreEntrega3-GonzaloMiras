@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="33" viewBox="0 0 36 33">
+  <g id="icono-mapa--light" transform="translate(0 -1.5)">
+    <path id="Trazado_891" data-name="Trazado 891" d="M1.5,9V33L12,27l12,6,10.5-6V3L24,9,12,3Z" fill="none" stroke="#fee" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Trazado_892" data-name="Trazado 892" d="M12,3V27" fill="none" stroke="#fee" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Trazado_893" data-name="Trazado 893" d="M24,9V33" fill="none" stroke="#fee" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>
