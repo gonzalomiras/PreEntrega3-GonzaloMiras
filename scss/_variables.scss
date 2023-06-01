@@ -1,7 +1,7 @@
 /*VARIABLES*/
 
 @mixin cientifico-mixin {
-    background-color: rgb(29, 22, 83);
+    background-color: $color-secundario;
     border: solid 3px black;
     text-align: center;
     align-items: center;
@@ -26,20 +26,31 @@
 }
 
 @mixin carreras-mixin {
-    background-color: #a3a5c3;
-    margin-top: 25px;
-    margin-left: 20px;
+    background-color: $color-gris;
     padding: 10px;
-    width: 300px;
+    margin: 5px, 5px;
     border: solid 3px black;
+    justify-content: center;
+    align-items: center;
 
     img {
-    width: 290px;
+    width: 250px;
     display: block;
     margin: 0 auto;
     }
 
     ul{
-    margin-top: 15px; margin-bottom: 15px;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    text-align: center;
+    padding-left: 0rem;
     }    
 }
+
+/*PALETA DE COLORES*/
+
+$color-negro: black;
+$color-azul: rgb(29, 22, 83);
+$color-gris: rgb(199, 199, 199);
+$color-blanco: white;
+$color-secundario: rgb(179, 51, 16);

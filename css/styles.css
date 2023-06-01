@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/*VARIABLES*/ /*Buena Práctica: colocar los margin y padding en 0*/
+/*VARIABLES*/
+/*PALETA DE COLORES*/
+/*Buena Práctica: colocar los margin y padding en 0*/
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +15,15 @@ h1 {
   /*Propiedad = color y el blueviolet = Valor*/
   color: rgb(15, 25, 139);
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  background-color: rgb(199, 199, 199);
+  text-shadow: 6px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*Caracterísitcas h2*/
 h2 {
-  color: rgb(56, 56, 121);
+  color: rgb(29, 22, 83);
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -48,7 +53,7 @@ ul {
 p {
   margin-bottom: 10px;
   margin-left: 10px;
-  color: rgb(15, 0, 79);
+  color: rgb(12, 12, 71);
 }
 
 header {
@@ -158,71 +163,107 @@ header {
   color: rgb(68, 115, 190);
 }
 
+/*Mediaquerie para la Navbar en pantalla grande*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar-nav {
+    padding-left: 15rem;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .navbar-nav {
+    padding-left: 30rem;
+  }
+}
 .chiuni {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5px;
 }
 .chiuni img {
-  margin: 10px;
   border: solid rgb(0, 0, 0);
   text-align: center;
   max-width: 100%;
 }
 
-/*Formato para Facultad de Ciencias Jurídicas en Index*/
-.ingindex {
-  background-color: #a3a5c3;
-  margin-top: 25px;
-  margin-left: 20px;
+.arteymoda {
+  background-color: rgb(199, 199, 199);
   padding: 10px;
-  width: 300px;
+  margin: 5px, 5px;
   border: solid 3px black;
+  justify-content: center;
+  align-items: center;
+}
+.arteymoda img {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+.arteymoda ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-left: 0rem;
+}
+
+.ingindex {
+  background-color: rgb(199, 199, 199);
+  padding: 10px;
+  margin: 5px, 5px;
+  border: solid 3px black;
+  justify-content: center;
+  align-items: center;
 }
 .ingindex img {
-  width: 290px;
+  width: 250px;
   display: block;
   margin: 0 auto;
 }
 .ingindex ul {
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: center;
+  padding-left: 0rem;
 }
 
 .medindex {
-  background-color: #a3a5c3;
-  margin-top: 25px;
-  margin-left: 20px;
+  background-color: rgb(199, 199, 199);
   padding: 10px;
-  width: 300px;
+  margin: 5px, 5px;
   border: solid 3px black;
+  justify-content: center;
+  align-items: center;
 }
 .medindex img {
-  width: 290px;
+  width: 250px;
   display: block;
   margin: 0 auto;
 }
 .medindex ul {
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: center;
+  padding-left: 0rem;
 }
 
 .jurindex {
-  background-color: #a3a5c3;
-  margin-top: 25px;
-  margin-left: 20px;
+  background-color: rgb(199, 199, 199);
   padding: 10px;
-  width: 300px;
+  margin: 5px, 5px;
   border: solid 3px black;
+  justify-content: center;
+  align-items: center;
 }
 .jurindex img {
-  width: 290px;
+  width: 250px;
   display: block;
   margin: 0 auto;
 }
 .jurindex ul {
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: center;
+  padding-left: 0rem;
 }
 
 .titleca {
@@ -232,24 +273,9 @@ header {
   gap: 15px;
 }
 
-.carreras {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-  .carreras {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
 /*Incluyendo Mixin a los Científicos*/
 .favaloro {
-  background-color: rgb(29, 22, 83);
+  background-color: rgb(179, 51, 16);
   border: solid 3px black;
   text-align: center;
   align-items: center;
@@ -270,7 +296,7 @@ header {
 }
 
 .rabinovich {
-  background-color: rgb(29, 22, 83);
+  background-color: rgb(179, 51, 16);
   border: solid 3px black;
   text-align: center;
   align-items: center;
@@ -291,7 +317,7 @@ header {
 }
 
 .gamarnik {
-  background-color: rgb(29, 22, 83);
+  background-color: rgb(179, 51, 16);
   border: solid 3px black;
   text-align: center;
   align-items: center;
@@ -312,7 +338,7 @@ header {
 }
 
 .milstein {
-  background-color: rgb(29, 22, 83);
+  background-color: rgb(179, 51, 16);
   border: solid 3px black;
   text-align: center;
   align-items: center;
@@ -342,7 +368,7 @@ header {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .malvarg img {
@@ -352,7 +378,7 @@ header {
 }
 
 .notint {
-  background-color: rgb(108, 105, 129);
+  background-color: rgb(199, 199, 199);
   margin-left: 5px;
   margin-right: 5px;
   border: solid;
@@ -370,8 +396,17 @@ header {
 
 .titnot {
   text-align: center;
-  color: white;
+  color: rgb(29, 22, 83);
   font-size: 2rem;
+}
+
+.contentcarrera {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.accordion-body {
+  text-align: justify;
 }
 
 .formulario {

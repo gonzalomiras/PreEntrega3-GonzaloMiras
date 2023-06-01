@@ -13,14 +13,16 @@ h1 {
     /*Propiedad = color y el blueviolet = Valor*/
     color: rgb(15, 25, 139);
     text-align: center;
-    font-size: 2rem;
-
+    font-size: 3rem;
+    background-color: $color-gris;
+    text-shadow: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*Caracterísitcas h2*/
 
 h2 {
-    color: rgb(56, 56, 121);
+    color: $color-azul;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -51,7 +53,7 @@ ul {
 p{
     margin-bottom: 10px;
     margin-left: 10px;
-    color: rgb(15, 0, 79);
+    color: rgb(12, 12, 71);
 }
 
 header{
@@ -152,7 +154,6 @@ header{
     width: 250px;
 }
 
-
 /*Aplicando Pseudoclases*/
 
 .menu li a:hover {
@@ -162,3 +163,17 @@ header{
     background-color: #a3a5c3;
     color: rgb(68, 115, 190);
 }
+
+/*Mediaquerie para la Navbar en pantalla grande*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .navbar-nav {
+    padding-left: 15rem;
+    }
+    }
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+        .navbar-nav {
+        padding-left: 30rem;
+        }
+        }
