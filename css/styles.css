@@ -409,6 +409,14 @@ header {
   text-align: justify;
 }
 
+.textoint {
+  text-align: center;
+}
+
+.accordion-button {
+  font-weight: bold;
+}
+
 .formulario {
   background-color: rgb(18, 18, 64);
   color: whitesmoke;
