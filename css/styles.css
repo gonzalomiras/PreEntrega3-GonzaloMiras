@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Buena Práctica: colocar los margin y padding en 0*/
+/*VARIABLES*/ /*Buena Práctica: colocar los margin y padding en 0*/
 * {
   margin: 0;
   padding: 0;
@@ -178,7 +178,6 @@ header {
   padding: 10px;
   width: 300px;
   border: solid 3px black;
-  grid-area: ingenieria;
 }
 .ingindex img {
   width: 290px;
@@ -197,11 +196,9 @@ header {
   padding: 10px;
   width: 300px;
   border: solid 3px black;
-  grid-area: salud;
 }
 .medindex img {
   width: 290px;
-  height: 190px;
   display: block;
   margin: 0 auto;
 }
@@ -217,7 +214,6 @@ header {
   padding: 10px;
   width: 300px;
   border: solid 3px black;
-  grid-area: juridica;
 }
 .jurindex img {
   width: 290px;
@@ -251,10 +247,11 @@ header {
     justify-content: center;
   }
 }
+/*Incluyendo Mixin a los Científicos*/
 .favaloro {
   background-color: rgb(29, 22, 83);
   border: solid 3px black;
-  text-align: justify;
+  text-align: center;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
@@ -272,10 +269,52 @@ header {
   color: white;
 }
 
+.rabinovich {
+  background-color: rgb(29, 22, 83);
+  border: solid 3px black;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.rabinovich img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.rabinovich h3 {
+  text-align: center;
+  color: white;
+}
+.rabinovich p {
+  color: white;
+}
+
+.gamarnik {
+  background-color: rgb(29, 22, 83);
+  border: solid 3px black;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.gamarnik img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.gamarnik h3 {
+  text-align: center;
+  color: white;
+}
+.gamarnik p {
+  color: white;
+}
+
 .milstein {
   background-color: rgb(29, 22, 83);
   border: solid 3px black;
-  text-align: justify;
+  text-align: center;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
@@ -347,7 +386,7 @@ header {
   margin: 20px;
 }
 
-.preg {
+.preg, .preg2 {
   width: 100%;
   padding: 0.5em;
   margin-bottom: 12px;
@@ -356,8 +395,16 @@ header {
   text-align: center;
 }
 
+.preg2 {
+  background-color: rgb(185, 75, 75);
+}
+
 .formulario-contacto {
   text-align: center;
+}
+
+.boton {
+  border-radius: 20px;
 }
 
 /*Galería utilizando Grids*/

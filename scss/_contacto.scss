@@ -17,7 +17,15 @@
     text-align: center;
 }
 
+.preg2 {
+    @extend .preg;
+    background-color: rgb(185, 75, 75);
+}
 
 .formulario-contacto {
     text-align: center;
+}
+
+.boton {
+    border-radius: 20px;
 }

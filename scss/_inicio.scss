@@ -14,64 +14,15 @@
 /*Formato para Facultad de Ciencias Jurídicas en Index*/
 
 .ingindex {
-    background-color: #a3a5c3;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding: 10px;
-    width: 300px;
-    border: solid 3px black;
-    grid-area: ingenieria;
-
-    img {
-    width: 290px;
-    display: block;
-    margin: 0 auto;
-    }
-
-    ul{
-    margin-top: 15px; margin-bottom: 15px;
-    }    
+    @include carreras-mixin
 }
 
 .medindex{
-    background-color: #a3a5c3;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding: 10px;
-    width: 300px;
-    border: solid 3px black;
-    grid-area: salud;
-
-    img {
-    width: 290px;
-    height: 190px;
-    display: block;
-    margin: 0 auto;
-    }
-
-    ul{
-    margin-top: 15px; margin-bottom: 15px;
-    }
+    @include carreras-mixin
     
 }
 .jurindex{
-    background-color: #a3a5c3;
-    margin-top: 25px;
-    margin-left: 20px;
-    padding: 10px;
-    width: 300px;
-    border: solid 3px black;
-    grid-area: juridica;
-
-    img {
-    width: 290px;
-    display: block;
-    margin: 0 auto;
-    }
-
-    ul{
-    margin-top: 15px; margin-bottom: 15px;
-    }
+    @include carreras-mixin
 } 
 .titleca {
     display: flex;
@@ -88,7 +39,6 @@
     flex-wrap: wrap;
 }
 
-
 @media (max-width: 768px) {
     .carreras {
         flex-direction: column;
@@ -97,54 +47,20 @@
     }
     }    
 
+/*Incluyendo Mixin a los Científicos*/
+
 .favaloro {
-        background-color: rgb(29, 22, 83);
-        border: solid 3px black;
-        text-align:justify;
-        align-items: center;
-        justify-content: space-around;
-        margin: 0 auto;
-        
-    
-        img{
-        width: 150px;
-        display: block;
-        margin: 0 auto;
-        }
-    
-        h3 {
-        text-align: center;
-        color: white;
-        }
-    
-        p{
-        color: white;
-        }
+    @include cientifico-mixin
+}
+.rabinovich {
+    @include cientifico-mixin
+}
+.gamarnik {
+    @include cientifico-mixin
 }
 
 .milstein {
-    background-color: rgb(29, 22, 83);
-    border: solid 3px black;
-    text-align:justify;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    
-
-    img{
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-    }
-
-    h3 {
-    text-align: center;
-    color: white;
-    }
-
-    p{
-    color: white;
-    }
+    @include cientifico-mixin
 }
 .noticias {
     margin: 0 auto;
