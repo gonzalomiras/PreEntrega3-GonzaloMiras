@@ -421,7 +421,7 @@ header {
 
 .probando img:hover {
   cursor: crosshair;
-  width: 300px;
+  width: 50px;
   opacity: 1;
   filter: contrast(120%);
 }
