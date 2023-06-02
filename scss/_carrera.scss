@@ -2,17 +2,32 @@
     display: flex;
     width: 100%;
     height: 430px;
-  }
-  .probando img{
+  
+    img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
   }
-  .probando img:hover{
-    cursor: crosshair;
-    width: 50px;
-    opacity: 1;
-    filter: contrast(120%);
+    img:hover{
+        cursor: crosshair;
+        width: 50px;
+        opacity: 1;
+        filter: contrast(120%);
+  }
+    }
+
+  .titulosfacultad {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: $color-gris;
+    margin: 10px;
+  }
+
+  .bodyfacultades {
+    background-color: $color-azul;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
