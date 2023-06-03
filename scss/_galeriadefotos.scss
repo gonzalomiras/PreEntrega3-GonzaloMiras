@@ -9,7 +9,7 @@
     "foto4 foto4 foto5 foto5 foto6"
     "foto7 foto7 foto8 foto9 foto9";
     gap: 12px;
-    background-color: rgb(26, 26, 68);
+    background-image: linear-gradient(to left, rgb(26, 26, 68), black);
     padding: 10px;
 }
 
@@ -45,12 +45,12 @@
 }
 
 .img5 {
-    background-image: url(../img/5.jpg);
+    background-image: url(../img/5.webp);
     grid-area: foto5;
 }
 
 .img6 {
-    background-image: url(../img/6.jpg);
+    background-image: url(../img/6.webp);
     grid-area: foto6;
 }
 

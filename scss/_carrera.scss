@@ -22,12 +22,25 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    background-color: $color-gris;
+    background-image: linear-gradient(to left, $color-gris, rgb(232, 232, 232));
     margin: 10px;
   }
 
   .bodyfacultades {
-    background-color: $color-azul;
+    background-image: linear-gradient(to left, rgb(26, 26, 68), rgb(28, 0, 212), black);
     padding-top: 5px;
     padding-bottom: 5px;
   }
+
+.titulocarrera {
+    text-align: center;
+    color: $color-blanco;
+}
+
+.textocarrera {
+    color: $color-gris;
+    text-align: center;
+}
+.parrafocarrera {
+    text-align: center;
+}
