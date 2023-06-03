@@ -12,7 +12,7 @@
   }
     img:hover{
         cursor: crosshair;
-        width: 50px;
+        width: $max * 5;
         opacity: 1;
         filter: contrast(120%);
   }
@@ -21,15 +21,15 @@
   .titulosfacultad {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: $mega;
     background-image: linear-gradient(to left, $color-gris, rgb(232, 232, 232));
-    margin: 10px;
+    margin: $max;
   }
 
   .bodyfacultades {
     background-image: linear-gradient(to left, rgb(26, 26, 68), rgb(28, 0, 212), black);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: $mini;
+    padding-bottom: $mini;
   }
 
 .titulocarrera {

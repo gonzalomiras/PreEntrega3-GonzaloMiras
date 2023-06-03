@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*VARIABLES*/
 /*PALETA DE COLORES*/
+/*ESPACIADOS*/
 /*Buena Práctica: colocar los margin y padding en 0*/
 * {
   margin: 0;
@@ -185,7 +186,7 @@ footer {
   margin: 5px;
 }
 .chiuni img {
-  border: solid rgb(0, 0, 0);
+  border: solid black;
   text-align: center;
   max-width: 100%;
 }
@@ -279,7 +280,7 @@ footer {
 
 /*Incluyendo Mixin a los Científicos*/
 .favaloro {
-  background-color: rgb(179, 51, 16);
+  background-color: rgb(106, 72, 117);
   border: solid 3px black;
   text-align: center;
   align-items: center;
@@ -300,7 +301,7 @@ footer {
 }
 
 .rabinovich {
-  background-color: rgb(179, 51, 16);
+  background-color: rgb(106, 72, 117);
   border: solid 3px black;
   text-align: center;
   align-items: center;
@@ -321,7 +322,7 @@ footer {
 }
 
 .gamarnik {
-  background-color: rgb(179, 51, 16);
+  background-color: rgb(106, 72, 117);
   border: solid 3px black;
   text-align: center;
   align-items: center;
@@ -342,7 +343,7 @@ footer {
 }
 
 .milstein {
-  background-color: rgb(179, 51, 16);
+  background-color: rgb(106, 72, 117);
   border: solid 3px black;
   text-align: center;
   align-items: center;
@@ -495,10 +496,6 @@ footer {
 
 .formulario-contacto {
   text-align: center;
-}
-
-.boton {
-  border-radius: 20px;
 }
 
 /*Galería utilizando Grids*/

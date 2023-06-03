@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5px;
+    margin: $mini;
 
     img {
-        border: solid rgb(0, 0, 0);
+        border: solid $color-negro;
         text-align: center;
         max-width: 100%;
         }
@@ -51,31 +51,31 @@
 }
 .noticias {
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: $max * 3;
+    margin-bottom: $max * 3;
 }
 .grandes {
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin: 5px;
+    margin-top: $max * 3;
+    margin-bottom: $max * 3;
+    margin: $mini;
 }
 .malvarg img{
-    width: 200px;
+    width: $mega * 10;
     border-style: solid;
-    border-color: black;
+    border-color: $color-negro;
 }
 
 .notint {
     background-color: $color-gris;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: $mini;
+    margin-right: $mini;
     border: solid;
 }
 
 .anidada{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: $mini;
+    margin-bottom: $max;
     font-style: italic;
 
     ul{
@@ -91,6 +91,6 @@
 }
 
 .contentcarrera {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: $mini;
+    margin-right: $mini;
 }

@@ -6,13 +6,13 @@
     margin: 0px;
 }
 .forms {
-    margin: 20px;
+    margin: $mega
 }
 .preg {
     width: 100%;
     padding: .5em;
-    margin-bottom: 12px;
-    margin-top: 12px;
+    margin-bottom: $max + 2;
+    margin-top: $max + 2;
     border: none;
     text-align: center;
 }
@@ -24,8 +24,4 @@
 
 .formulario-contacto {
     text-align: center;
-}
-
-.boton {
-    border-radius: 20px;
 }
